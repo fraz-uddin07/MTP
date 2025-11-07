@@ -23,7 +23,7 @@ def main():
     p.add_argument("--student_name", type=str, default="NousResearch/Llama-2-7b-chat-hf", # Example 7B model
                        help="Base model name for student and self-distillation teacher")
     # p.add_argument("--teacher_name", ...) # <-- REMOVED
-    p.add_argument("--tokenizer_name", type=str, default=None,
+    p.add_argument("--tokenizer_name", type=str, default="NousResearch/Llama-2-7b-chat-hf",
                        help="Defaults to student_name")
     p.add_argument("--offsets", type=int, nargs="*", default=[2, 3, 4, 5])  # Predict tokens at offsets t+2, t+3, t+4, t+5
 

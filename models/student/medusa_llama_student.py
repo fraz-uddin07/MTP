@@ -76,7 +76,8 @@ class MultiTokenHead(nn.Module):
 
         Args:
             hidden_states: [B, S, D] tensor from the backbone's last layer.
-            last_only: If True, only use the hidden state of the last token [:, -1:, :].
+            last_only: If True, only use the hidden state of the last token [:, 
+            :, :].
 
         Returns:
             dict: {offset_k: [B, S_or_1, V] logits tensor for offset k}
